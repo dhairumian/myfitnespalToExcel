@@ -8,7 +8,6 @@ theDate = datetime.date.today()
 wb = load_workbook('TheNameOfYourFile.xlsx')
 ws2 = wb['TheNameOfTheSheet']
 
-
 for day in range (1, theDate.day + 1):
     today = client.get_date(theDate.year, theDate.month, day)
     curr = datetime.date(theDate.year, theDate.month, day)
@@ -31,4 +30,3 @@ for day in range (1, theDate.day + 1):
 
 
 wb.save('TheNameOfYourFile.xlsx')
-
